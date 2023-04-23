@@ -185,6 +185,9 @@
                                 <img src="img/introducao/1.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
                                 <li>Cada programa, na memória principal, tem regiões. Isso é ilustrado na Figura abaixo:</li>
                                 <img src="img/introducao/2.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                <p>Fonte: MAZIERO, Carlos. Memória processo. 2021. 1 imagem. 415 x 283 pixels. Disponível em: https://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=prog2:memoria-processo.png. Acesso em: 22 de abril de 2023.</p>
+
                                 <li>Funções tem endereços;</li>
                                 <li>Blocos tem limites</li>
                                 <li>A Figura a seguir ilustra endereços de funções e limites dos blocos:</li>
@@ -208,6 +211,10 @@
                                 <li>Existe uma forma de facilitar essa comunicação: RCP</li>
                                 <li>A figura abaixo ilustra o RPC em linhas gerais:</li>
                                 <img src="img/introducao/4.jpg" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+                                
+                                <p>Fonte: ARORA, Ridze. Remote procedure call. 2020. 1 imagem. 500 x 250 pixels. Disponível em: https://i.pinimg.com/564x/68/7b/2c/687b2cf1cff474b693ec10c97a7a6c0a.jpg. Acesso em: 2 de abril de 2023. </p>
+
+                                
                                 <li>Os autores Stephanie Wang, Benjamin Hindman e Ion Stoica escrevem o seguinte sobre RPC: 
                                     "A chave por trás do sucesso do RPC é a semântica simples, mas poderosa, de seu modelo de programação".
                                 </li>
@@ -231,12 +238,18 @@
                                 <li>Existe um stub para o cliente e outro para o servidor.</li>
                                 <li>A Figura a seguir ilustra os stubs:</li>
                                 <img src="img/fundteor/1.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                <p>Fonte: KRZYZANOWSKI, Paul. Steps in executing a remote procedure call. 2021. 1 imagem. 482 x 303 pixels. Disponível em: https://people.cs.rutgers.edu/~pxk/417/notes/images/rpc-flow.png. Acesso em: 2 de abril de 2023. </p>
+
                                 <li>Observe que os stubs recebem os dados da camada superior como parâmetros e monta uma mensagem a ser enviada como cadeia de bytes;</li>
                                 <li>Esse processo de empacotamento é chamado de Marshalling ou packaging;</li>
                                 <li>Observe ainda que os stubs devem entregar dados para a camada superior como parâmetros, desmontando uma mensagem que veio  como cadeia de bytes;</li>
                                 <li>Esse processo de desempacotamento é chamado de unmarshalling ou unpacking.</li>
                                 <li>A Figura a seguir ilustra os empacotamentos e desempacotamentos:</li>
                                 <img src="img/fundteor/2.jpg" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                <p>Fonte: PAWAN, V. Steps of RPC. 2021. 1 imagem. 540 x 303 pixels. Disponível em: https://media.licdn.com/dms/image/C5612AQE7IHr8My57Nw/article-inline_image-shrink_1500_2232/0/1624297081904?e=1687392000&v=beta&t=iWAOxDx4MS-9FsHRjiBA2x42-h4BjOZDuM8MgZD71gU. Acesso em: 2 de abril de 2023. </p>
+
 
                             </ul>
                         </div>
@@ -645,7 +658,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">Conclusão</h4>
-                            <p>Texto de Conclusão.</p>
+                            <ul style="list-style-type: disc;margin-left: 20px;">
+                                <li>O RPC é um recurso muito poderoso;</li>
+                                <li>Ele disponibiliza diversos recursos para uma comunicação;</li>
+                                <li>Sistemas eficientes podem ser feitos com base em sua utilização.</li>
+                            </ul>
+                            
+
                         </div>
                     </div>
                     
@@ -656,7 +675,16 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">Referências</h4>
-                            <p>Texto de Referências.</p>
+                            <ul style="list-style-type: disc;margin-left: 20px;">
+                                <li>MAZIERO, Carlos. Memória processo. 2021. 1 imagem. 415 x 283 pixels. Disponível em: https://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=prog2:memoria-processo.png. Acesso em: 22 de abril de 2023. </li>
+                                <li>ARORA, Ridze. Remote procedure call. 2020. 1 imagem. 500 x 250 pixels. Disponível em: https://i.pinimg.com/564x/68/7b/2c/687b2cf1cff474b693ec10c97a7a6c0a.jpg. Acesso em: 2 de abril de 2023. </li>
+                                <li>KRZYZANOWSKI, Paul. Steps in executing a remote procedure call. 2021. 1 imagem. 482 x 303 pixels. Disponível em: https://people.cs.rutgers.edu/~pxk/417/notes/images/rpc-flow.png. Acesso em: 2 de abril de 2023. </li>
+                                <li>WANG, Stephanie; HINDMAN, Benjamin; STOICA, Ion. In reference to RPC: it's time to add distributed memory. In: HotOS. 2021. p. 191-198.</li>
+                                <li>PAWAN, V. Steps of RPC. 2021. 1 imagem. 540 x 303 pixels. Disponível em: https://media.licdn.com/dms/image/C5612AQE7IHr8My57Nw/article-inline_image-shrink_1500_2232/0/1624297081904?e=1687392000&v=beta&t=iWAOxDx4MS-9FsHRjiBA2x42-h4BjOZDuM8MgZD71gU. Acesso em: 2 de abril de 2023. </li>
+                                <li>Emojiterra team. Rosto pensativo emoji. 2017. 1 imagem. 303 x 303 pixels. Disponível em: https://images.emojiterra.com/google/android-12l/512px/1f914.png. Acesso em: 2 de abril de 2023. </li>
+                                <li>EV Comunicação. Conheça seu público alvo. 2015. 1 imagem. 461 x 303 pixels. Disponível em: http://varizes.net.br/wp-content/uploads/2019/06/duvida1-970x637.jpg. Acesso em: 2 de abril de 2023. </li>
+                            </ul>
+
                         </div>
                     </div>
                     
