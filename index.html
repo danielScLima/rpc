@@ -180,6 +180,33 @@
                                 <img src="img/introducao/1.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
                                 <li>Cada programa, na memória principal, tem regiões. Isso é ilustrado na Figura abaixo:</li>
                                 <img src="img/introducao/2.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+                                <li>Funções tem endereços;</li>
+                                <li>Blocos tem limites</li>
+                                <li>A Figura a seguir ilustra endereços de funções e limites dos blocos:</li>
+                                <img src="img/introducao/3.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+
+                                <li>Em alguns casos, o código a ser chamado não está na máquina local;</li>
+                                <li>Exemplos:</li>
+                                    <ul style="list-style-type: disc;margin-left: 40px;">
+                                        <li>Obter um status de um serviço;</li>
+                                        <li>Ativar determinado recurso;</li>
+                                        <li>Executar um cálculo e obter o resultado;</li>
+                                        <li>Executar uma transformação sobre dados locais (após upload) e baixar os resultados (com download).</li>
+                                    </ul>
+                                <li>Pode-se usar, por exemplo, o modelo cliente/servidor;</li>
+                                <li>Deve-se criar um protocolo para essa comunicação;</li>
+                                <li>Deve-se fazer sockets para as trocas de mensagens;</li>
+                                <li>Deve-se empacotar/desempacotar parâmetros/resultados;</li>
+                                <li>Dentre outros.</li>
+                                <li>Seria interessante houvesse uma forma de simplificar essa comunicação entre clientes e servidores, facilitando as chamadas a métodos em outras máquinas.</li>
+                                <li>Existe uma forma de facilitar essa comunicação: RCP</li>
+                                <li>A figura abaixo ilustra o RPC em linhas gerais:</li>
+                                <img src="img/introducao/4.jpg" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+                                <li>Os autores Stephanie Wang, Benjamin Hindman e Ion Stoica escrevem o seguinte sobre RPC: 
+                                    "A chave por trás do sucesso do RPC é a semântica simples, mas poderosa, de seu modelo de programação".
+                                </li>
+                                    
                             </ul>
 
                         </div>
