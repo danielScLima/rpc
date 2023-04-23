@@ -300,7 +300,107 @@
                                 </ul>
                                 <li><strong>Exemplo 1: Exibe 1:</strong></li>
                                 <ul style="list-style-type: disc;margin-left: 40px;">
-                                    <li></li>
+                                    <li>Demonstro a interface exibe.x, do exemplo 1;</li>
+                                    <li>Crio uma pasta em ~/Downloads/rpc/exemplo1;</li>
+                                    <li>Crio um único arquivo, que é o exibe.x;</li>
+                                    <li>Deve–se gerar os stubs de cliente e servidor;</li>
+                                    <li>Para gerar os stubs deve-se executar o comando: rpcgen -a -C exibe.X:</li>
+                                    <ul style="list-style-type: disc;margin-left: 80px;">
+                                        <li>Flag a: cria todos os arquivos de cliente e servidor;</li>
+                                        <li>Flag C: cria códigos no modo ansi c.</li>
+                                    </ul>
+                                    <li>O arquivo exibe.x é ilustrado na Figura abaixo:</li>
+                                    <img src="img/exemplos/1/1.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+                                    <li>A execução do comando rpcgen sobre o arquivo exibe.x é ilustrado na Figura abaixo:</li>
+                                    <img src="img/exemplos/1/2.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>O código gerado já está pronto para uso;</li>
+                                    <li>Foram criados códigos de cliente e servidor;</li>
+                                    <li>Define-se funções que chamam os códigos de stub;</li>
+                                    <li>Tudo isso já está pronto, até exibindo em quais locais personalizar a funcionalidade;</li>
+                                    <li>Também foi fornecido um arquivo Makefile;</li>
+                                    <li>Dependendo do seu sistema operacional, já está operacional a utilização da biblioteca de rpc;</li>
+                                    <li>Nas versões de Ubuntu como 14.04 o Makefile já estava finalizado;</li>
+                                    <li>Nessa versão do 22.04 não está pronto ainda;</li>
+                                    <li>A Figura abaixo ilustra um erro ao usar o arquivo makefile:</li>
+
+                                    <img src="img/exemplos/1/3.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>Esse erro ocorreu pois não se sabe em qual pasta estão os arquivos de cabeçalho e ainda não se está indicando quais arquivos de implementação linkar;</li>
+                                    <li>Resolvi procurar em qual pasta estão esses conteúdos;</li>
+                                    <li>A Figura seguinte exibe o resultado:</li>
+
+                                    <img src="img/exemplos/1/4.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>A imagem anterior mostrou que o comando rpcbind instalou a versão do rpc chamada TIRPC;</li>
+                                    <li>Pode-se instalar outras versões, como o NTIRPC:</li>
+
+                                    <img src="img/exemplos/1/5.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>Agora tem-se as seguintes bibliotecas:</li>
+
+                                    <img src="img/exemplos/1/6.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>Deve-se indicar estas pastas para o Makefile;</li>
+                                    <li>A versão padrão está da seguinte forma:</li>
+
+                                    <img src="img/exemplos/1/7.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>Para indicar o tirpc:</li>
+                                    <ul style="list-style-type: disc;margin-left: 80px;">
+                                        <li>Cabeçalhos: /usr/include/tirpc/;</li>
+                                        <li>Linkar: -l tirpc.</li>
+                                    </ul>
+                                    <li>Para indicar ntirpc:</li>
+                                    <ul style="list-style-type: disc;margin-left: 80px;">
+                                        <li>Cabeçalhos: /usr/include/ntirpc/;</li>
+                                        <li>Linkar: -l ntirpc.</li>
+                                    </ul>
+
+                                    <li>Escolhi a biblioteca tirpc, por ser a instalação padrão que é obtida com o rpcbind.</li>
+                                    <li>Essa escolha é ilustrada na Figura abaixo:</li>
+
+                                    <img src="img/exemplos/1/8.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>Já é possível ter sucesso ao chamar o comando make:</li>
+
+                                    <img src="img/exemplos/1/9.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>A implementação padrão não vem com código;</li>
+                                    <li>Executa-se primeiramente o servidor;</li>
+                                    
+                                    <img src="img/exemplos/1/10.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+                                    
+                                    <li>Executa-se então o cliente.</li>
+
+                                    <img src="img/exemplos/1/11.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>Não ocorre nenhuma saída no servidor:</li>
+
+                                    <img src="img/exemplos/1/12.png" style="padding-top: 50px;padding-bottom: 50px;" alt="about me">
+
+                                    <li>A partir de então serão construídos exemplos de minha autoria a fim de mostrar diferentes recursos do rpc:</li>
+
+                                    <ul style="list-style-type: disc;margin-left: 80px;">
+                                        <li>Exibe 1;</li>
+                                        <li>Exibe 2;</li>
+                                        <li>Pergunta;</li>
+                                        <li>Quadrado;</li>
+                                        <li>Soma;</li>
+                                        <li>Calculadora;</li>
+                                        <li>Operação.</li>
+                                    </ul>
+
+
+
+
+
+
+
+
+
+
+
                                     
                                 </ul>
                                 <li><strong>Exemplo 2: Exibe 2:</strong></li>
